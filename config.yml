@@ -1,0 +1,20 @@
+last-update : 17/04/2023 1:25
+
+location : 
+  # fake location
+  country : Algeria 
+  lat : 34.699848
+  lon : 5.600098
+
+weahter :
+  status : Clear
+  description : some description
+  icon : 01d
+  temp : 293.24
+  temp_min : 293.24
+  temp_max : 293.24
+  wind_speed : 1.97
+  dt : 1681731064
+  sunrise : 1681706918
+  sunset : 1681754074
+
