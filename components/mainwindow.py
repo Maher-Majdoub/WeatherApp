@@ -8,8 +8,9 @@ class MainWindow(QWidget, Ui_mainwindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+
         self.mainweather_icon.setPixmap(tools.getIcon('01d'))
-        
+                
         # card = Card("Today", '01d', '16°')
         # self.cards_layout.addWidget(card)
         # card = Card("Today", '01n', '16°')
@@ -20,11 +21,14 @@ class MainWindow(QWidget, Ui_mainwindow):
         # self.cards_layout.setSpacing(0)
         # self.cards_layout.addWidget(card)
         self.setWeather()
-        
 
     def setWeather(self):
-        coutry_name, country_code, weather = tools.getWeather()
-        weather = tools.convertToWeather(weather)
+        date_time = tools.getCurrentDateTime()
+
+        coutry_name, country_code, global_weather, current_weather = tools.getWeather()
+        print(current_weather)
+        print(global_weather)
+        weather = tools.convertToWeather(current_weather, current_weather['sys']['sunset'],  current_weather['sys']['sunset'])
         self.country_lbl.setText(f'{coutry_name},   {country_code}')
         self.mainweather_icon.setPixmap(tools.getIcon(weather.icon))
 
