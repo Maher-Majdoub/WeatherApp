@@ -5,11 +5,12 @@ class Weather(BaseModel):
     status : str
     description : str
     icon : str
-    temp : int
-    temp_min : int
-    temp_max : int
+    temp : float
+    temp_min : float
+    temp_max : float
     wind_speed : float
     dt : int
+    humidity : int
     sunrise : int
     sunset : int
     
