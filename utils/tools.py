@@ -77,8 +77,3 @@ def convertForecast(forecast : dict):
 
 def getCurrentDateTime():
     return datetime.now().strftime("%A %d %B")
-
-# weat = getWeather()
-# for item in weat[2]['list']:
-#     print(item)
-#     print('#########################################')

@@ -1,4 +1,5 @@
-from PySide6.QtWidgets import QWidget, QVBoxLayout, QLabel
+from PySide6.QtWidgets import QWidget, QVBoxLayout, QLabel, QLayout
+
 from datetime import datetime
 from utils import tools
 
@@ -8,8 +9,16 @@ class Card(QWidget):
         # self.day = day
         # self.icon = icon
         # self.temp = temp
+        self.setObjectName('card')
         
-        self.setStyleSheet('QLabel{background-color : grey;qproperty-alignment: AlignCenter;font-size: 20px;}')
+        self.setStyleSheet("""QLabel{
+                                background-color : rgba(128, 128, 128, 80);
+                                qproperty-alignment: AlignCenter;
+                                font-size: 25px;
+                            }
+
+                           """)
+        
         
         layout = QVBoxLayout()
         time_lbl = QLabel(datetime.utcfromtimestamp(weather['dt']).strftime('%H:%M'))
@@ -23,7 +32,6 @@ class Card(QWidget):
         layout.addWidget(icon_lbl)
         layout.addWidget(temp_lbl)
         layout.setSpacing(0)
-        
         self.setLayout(layout)
         
         

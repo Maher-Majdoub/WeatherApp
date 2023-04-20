@@ -1,0 +1,7 @@
+<RCC>
+  <qresource>
+    <file>images/icons/bg_image.png</file>
+    <file>images/icons/next-icon.png</file>
+    <file>images/icons/previous-icon.png</file>
+  </qresource>
+</RCC>
