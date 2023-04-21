@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QWidget, QLabel, QVBoxLayout, QMessageBox, QApplication
+from PySide6.QtWidgets import QWidget, QMessageBox, QApplication
 from gui.mainwindow_ui import Ui_mainwindow
 from .card import Card
 from utils import tools
@@ -25,7 +25,7 @@ class MainWindow(QWidget, Ui_mainwindow):
             self.previousday_lbl.mousePressEvent = self.showPreviousDay
             self.nextday_lbl.mousePressEvent = self.showNextDay
         else: 
-            QMessageBox.warning(self, 'No Internet', 'Please check the internet connection and rerun the application !')
+            QMessageBox.warning(self, 'No Internet Connection', 'Please check the internet connection and rerun the application !')
             raise Exception('No Internet')
 
         

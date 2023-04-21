@@ -81,9 +81,8 @@ def getWeather():
     try:
         url1 = f'http://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API_KEY}'
         url2 = f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API_KEY}'
-        forecast = requests.get(url1).json() #eval(open((os.path.join(os.path.dirname(__file__), 'forecast.txt')), 'r').read()) 
-        weather = requests.get(url2).json() #eval(open((os.path.join(os.path.dirname(__file__), 'weather.txt')), 'r').read())
-        
+        forecast = requests.get(url1).json()
+        weather = requests.get(url2).json() 
         __saveConfig(loc, weather, forecast)
     except:
         saved = getWeatherFromConfig()
