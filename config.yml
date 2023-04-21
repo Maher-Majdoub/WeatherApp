@@ -1,20 +1,1137 @@
-last-update : 17/04/2023 1:25
-
-location : 
-  # fake location
-  country : Algeria 
-  lat : 34.699848
-  lon : 5.600098
-
-weahter :
-  status : Clear
-  description : some description
-  icon : 01d
-  temp : 293.24
-  temp_min : 293.24
-  temp_max : 293.24
-  wind_speed : 1.97
-  dt : 1681731064
-  sunrise : 1681706918
-  sunset : 1681754074
-
+forecast:
+  city:
+    coord:
+      lat: 34.4739
+      lon: 9.4613
+    country: TN
+    id: 2473183
+    name: As Sanad
+    population: 7859
+    sunrise: 1682052225
+    sunset: 1682099865
+    timezone: 3600
+  cnt: 40
+  cod: '200'
+  list:
+  - clouds:
+      all: 30
+    dt: 1682121600
+    dt_txt: '2023-04-22 00:00:00'
+    main:
+      feels_like: 288.94
+      grnd_level: 984
+      humidity: 61
+      pressure: 1011
+      sea_level: 1011
+      temp: 289.64
+      temp_kf: 1.16
+      temp_max: 289.64
+      temp_min: 288.48
+    pop: 0
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: scattered clouds
+      icon: 03n
+      id: 802
+      main: Clouds
+    wind:
+      deg: 35
+      gust: 9.22
+      speed: 5.13
+  - clouds:
+      all: 39
+    dt: 1682132400
+    dt_txt: '2023-04-22 03:00:00'
+    main:
+      feels_like: 287.57
+      grnd_level: 984
+      humidity: 67
+      pressure: 1011
+      sea_level: 1011
+      temp: 288.25
+      temp_kf: 0.98
+      temp_max: 288.25
+      temp_min: 287.27
+    pop: 0
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: scattered clouds
+      icon: 03n
+      id: 802
+      main: Clouds
+    wind:
+      deg: 16
+      gust: 4.58
+      speed: 3.34
+  - clouds:
+      all: 21
+    dt: 1682143200
+    dt_txt: '2023-04-22 06:00:00'
+    main:
+      feels_like: 287.18
+      grnd_level: 986
+      humidity: 66
+      pressure: 1013
+      sea_level: 1013
+      temp: 287.92
+      temp_kf: 0
+      temp_max: 287.92
+      temp_min: 287.92
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: few clouds
+      icon: 02d
+      id: 801
+      main: Clouds
+    wind:
+      deg: 14
+      gust: 5.71
+      speed: 2.92
+  - clouds:
+      all: 0
+    dt: 1682154000
+    dt_txt: '2023-04-22 09:00:00'
+    main:
+      feels_like: 293.1
+      grnd_level: 987
+      humidity: 39
+      pressure: 1014
+      sea_level: 1014
+      temp: 293.95
+      temp_kf: 0
+      temp_max: 293.95
+      temp_min: 293.95
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: clear sky
+      icon: 01d
+      id: 800
+      main: Clear
+    wind:
+      deg: 50
+      gust: 6.4
+      speed: 5.27
+  - clouds:
+      all: 1
+    dt: 1682164800
+    dt_txt: '2023-04-22 12:00:00'
+    main:
+      feels_like: 297.29
+      grnd_level: 986
+      humidity: 28
+      pressure: 1012
+      sea_level: 1012
+      temp: 298.02
+      temp_kf: 0
+      temp_max: 298.02
+      temp_min: 298.02
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: clear sky
+      icon: 01d
+      id: 800
+      main: Clear
+    wind:
+      deg: 64
+      gust: 6.17
+      speed: 6.13
+  - clouds:
+      all: 0
+    dt: 1682175600
+    dt_txt: '2023-04-22 15:00:00'
+    main:
+      feels_like: 297.67
+      grnd_level: 985
+      humidity: 25
+      pressure: 1012
+      sea_level: 1012
+      temp: 298.43
+      temp_kf: 0
+      temp_max: 298.43
+      temp_min: 298.43
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: clear sky
+      icon: 01d
+      id: 800
+      main: Clear
+    wind:
+      deg: 99
+      gust: 5.74
+      speed: 5.98
+  - clouds:
+      all: 0
+    dt: 1682186400
+    dt_txt: '2023-04-22 18:00:00'
+    main:
+      feels_like: 291.77
+      grnd_level: 986
+      humidity: 49
+      pressure: 1013
+      sea_level: 1013
+      temp: 292.5
+      temp_kf: 0
+      temp_max: 292.5
+      temp_min: 292.5
+    pop: 0
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: clear sky
+      icon: 01n
+      id: 800
+      main: Clear
+    wind:
+      deg: 124
+      gust: 5.72
+      speed: 4.41
+  - clouds:
+      all: 4
+    dt: 1682197200
+    dt_txt: '2023-04-22 21:00:00'
+    main:
+      feels_like: 288.88
+      grnd_level: 988
+      humidity: 63
+      pressure: 1016
+      sea_level: 1016
+      temp: 289.54
+      temp_kf: 0
+      temp_max: 289.54
+      temp_min: 289.54
+    pop: 0
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: clear sky
+      icon: 01n
+      id: 800
+      main: Clear
+    wind:
+      deg: 126
+      gust: 2.61
+      speed: 1.67
+  - clouds:
+      all: 8
+    dt: 1682208000
+    dt_txt: '2023-04-23 00:00:00'
+    main:
+      feels_like: 287.45
+      grnd_level: 988
+      humidity: 71
+      pressure: 1016
+      sea_level: 1016
+      temp: 288.05
+      temp_kf: 0
+      temp_max: 288.05
+      temp_min: 288.05
+    pop: 0
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: clear sky
+      icon: 01n
+      id: 800
+      main: Clear
+    wind:
+      deg: 54
+      gust: 1.28
+      speed: 1.27
+  - clouds:
+      all: 31
+    dt: 1682218800
+    dt_txt: '2023-04-23 03:00:00'
+    main:
+      feels_like: 286.14
+      grnd_level: 988
+      humidity: 74
+      pressure: 1015
+      sea_level: 1015
+      temp: 286.79
+      temp_kf: 0
+      temp_max: 286.79
+      temp_min: 286.79
+    pop: 0
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: scattered clouds
+      icon: 03n
+      id: 802
+      main: Clouds
+    wind:
+      deg: 65
+      gust: 1.42
+      speed: 1.42
+  - clouds:
+      all: 52
+    dt: 1682229600
+    dt_txt: '2023-04-23 06:00:00'
+    main:
+      feels_like: 287.39
+      grnd_level: 989
+      humidity: 65
+      pressure: 1016
+      sea_level: 1016
+      temp: 288.14
+      temp_kf: 0
+      temp_max: 288.14
+      temp_min: 288.14
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: broken clouds
+      icon: 04d
+      id: 803
+      main: Clouds
+    wind:
+      deg: 144
+      gust: 1.06
+      speed: 0.85
+  - clouds:
+      all: 99
+    dt: 1682240400
+    dt_txt: '2023-04-23 09:00:00'
+    main:
+      feels_like: 291.75
+      grnd_level: 990
+      humidity: 39
+      pressure: 1017
+      sea_level: 1017
+      temp: 292.72
+      temp_kf: 0
+      temp_max: 292.72
+      temp_min: 292.72
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: overcast clouds
+      icon: 04d
+      id: 804
+      main: Clouds
+    wind:
+      deg: 150
+      gust: 1.43
+      speed: 1.62
+  - clouds:
+      all: 99
+    dt: 1682251200
+    dt_txt: '2023-04-23 12:00:00'
+    main:
+      feels_like: 296.28
+      grnd_level: 989
+      humidity: 26
+      pressure: 1016
+      sea_level: 1016
+      temp: 297.15
+      temp_kf: 0
+      temp_max: 297.15
+      temp_min: 297.15
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: overcast clouds
+      icon: 04d
+      id: 804
+      main: Clouds
+    wind:
+      deg: 161
+      gust: 2.37
+      speed: 2.57
+  - clouds:
+      all: 45
+    dt: 1682262000
+    dt_txt: '2023-04-23 15:00:00'
+    main:
+      feels_like: 297.84
+      grnd_level: 987
+      humidity: 24
+      pressure: 1014
+      sea_level: 1014
+      temp: 298.61
+      temp_kf: 0
+      temp_max: 298.61
+      temp_min: 298.61
+    pop: 0.01
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: scattered clouds
+      icon: 03d
+      id: 802
+      main: Clouds
+    wind:
+      deg: 144
+      gust: 4.14
+      speed: 5.15
+  - clouds:
+      all: 41
+    dt: 1682272800
+    dt_txt: '2023-04-23 18:00:00'
+    main:
+      feels_like: 293.08
+      grnd_level: 988
+      humidity: 35
+      pressure: 1015
+      sea_level: 1015
+      temp: 294.02
+      temp_kf: 0
+      temp_max: 294.02
+      temp_min: 294.02
+    pop: 0.01
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: scattered clouds
+      icon: 03n
+      id: 802
+      main: Clouds
+    wind:
+      deg: 124
+      gust: 4.13
+      speed: 3.59
+  - clouds:
+      all: 52
+    dt: 1682283600
+    dt_txt: '2023-04-23 21:00:00'
+    main:
+      feels_like: 289.82
+      grnd_level: 990
+      humidity: 51
+      pressure: 1017
+      sea_level: 1017
+      temp: 290.68
+      temp_kf: 0
+      temp_max: 290.68
+      temp_min: 290.68
+    pop: 0
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: broken clouds
+      icon: 04n
+      id: 803
+      main: Clouds
+    wind:
+      deg: 146
+      gust: 2.98
+      speed: 2.31
+  - clouds:
+      all: 30
+    dt: 1682294400
+    dt_txt: '2023-04-24 00:00:00'
+    main:
+      feels_like: 288.45
+      grnd_level: 989
+      humidity: 57
+      pressure: 1017
+      sea_level: 1017
+      temp: 289.29
+      temp_kf: 0
+      temp_max: 289.29
+      temp_min: 289.29
+    pop: 0
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: scattered clouds
+      icon: 03n
+      id: 802
+      main: Clouds
+    wind:
+      deg: 162
+      gust: 1.39
+      speed: 1.22
+  - clouds:
+      all: 5
+    dt: 1682305200
+    dt_txt: '2023-04-24 03:00:00'
+    main:
+      feels_like: 287.83
+      grnd_level: 988
+      humidity: 53
+      pressure: 1015
+      sea_level: 1015
+      temp: 288.82
+      temp_kf: 0
+      temp_max: 288.82
+      temp_min: 288.82
+    pop: 0
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: clear sky
+      icon: 01n
+      id: 800
+      main: Clear
+    wind:
+      deg: 195
+      gust: 1.04
+      speed: 0.97
+  - clouds:
+      all: 4
+    dt: 1682316000
+    dt_txt: '2023-04-24 06:00:00'
+    main:
+      feels_like: 290.48
+      grnd_level: 988
+      humidity: 41
+      pressure: 1016
+      sea_level: 1016
+      temp: 291.52
+      temp_kf: 0
+      temp_max: 291.52
+      temp_min: 291.52
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: clear sky
+      icon: 01d
+      id: 800
+      main: Clear
+    wind:
+      deg: 237
+      gust: 1.39
+      speed: 1.02
+  - clouds:
+      all: 2
+    dt: 1682326800
+    dt_txt: '2023-04-24 09:00:00'
+    main:
+      feels_like: 297.51
+      grnd_level: 989
+      humidity: 25
+      pressure: 1016
+      sea_level: 1016
+      temp: 298.29
+      temp_kf: 0
+      temp_max: 298.29
+      temp_min: 298.29
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: clear sky
+      icon: 01d
+      id: 800
+      main: Clear
+    wind:
+      deg: 227
+      gust: 3.49
+      speed: 2.41
+  - clouds:
+      all: 3
+    dt: 1682337600
+    dt_txt: '2023-04-24 12:00:00'
+    main:
+      feels_like: 301.12
+      grnd_level: 988
+      humidity: 20
+      pressure: 1014
+      sea_level: 1014
+      temp: 302.81
+      temp_kf: 0
+      temp_max: 302.81
+      temp_min: 302.81
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: clear sky
+      icon: 01d
+      id: 800
+      main: Clear
+    wind:
+      deg: 223
+      gust: 4.43
+      speed: 3.45
+  - clouds:
+      all: 6
+    dt: 1682348400
+    dt_txt: '2023-04-24 15:00:00'
+    main:
+      feels_like: 301.83
+      grnd_level: 986
+      humidity: 17
+      pressure: 1012
+      sea_level: 1012
+      temp: 303.79
+      temp_kf: 0
+      temp_max: 303.79
+      temp_min: 303.79
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: clear sky
+      icon: 01d
+      id: 800
+      main: Clear
+    wind:
+      deg: 240
+      gust: 6.82
+      speed: 7.55
+  - clouds:
+      all: 24
+    dt: 1682359200
+    dt_txt: '2023-04-24 18:00:00'
+    main:
+      feels_like: 299.76
+      grnd_level: 986
+      humidity: 21
+      pressure: 1012
+      sea_level: 1012
+      temp: 300.91
+      temp_kf: 0
+      temp_max: 300.91
+      temp_min: 300.91
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: few clouds
+      icon: 02d
+      id: 801
+      main: Clouds
+    wind:
+      deg: 237
+      gust: 9.74
+      speed: 6.61
+  - clouds:
+      all: 94
+    dt: 1682370000
+    dt_txt: '2023-04-24 21:00:00'
+    main:
+      feels_like: 297.24
+      grnd_level: 988
+      humidity: 30
+      pressure: 1015
+      sea_level: 1015
+      temp: 297.92
+      temp_kf: 0
+      temp_max: 297.92
+      temp_min: 297.92
+    pop: 0
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: overcast clouds
+      icon: 04n
+      id: 804
+      main: Clouds
+    wind:
+      deg: 327
+      gust: 5.51
+      speed: 3.95
+  - clouds:
+      all: 74
+    dt: 1682380800
+    dt_txt: '2023-04-25 00:00:00'
+    main:
+      feels_like: 293.15
+      grnd_level: 988
+      humidity: 43
+      pressure: 1015
+      sea_level: 1015
+      temp: 293.9
+      temp_kf: 0
+      temp_max: 293.9
+      temp_min: 293.9
+    pop: 0
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: broken clouds
+      icon: 04n
+      id: 803
+      main: Clouds
+    wind:
+      deg: 339
+      gust: 2.66
+      speed: 2.75
+  - clouds:
+      all: 54
+    dt: 1682391600
+    dt_txt: '2023-04-25 03:00:00'
+    main:
+      feels_like: 291.12
+      grnd_level: 987
+      humidity: 49
+      pressure: 1014
+      sea_level: 1014
+      temp: 291.91
+      temp_kf: 0
+      temp_max: 291.91
+      temp_min: 291.91
+    pop: 0
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: broken clouds
+      icon: 04n
+      id: 803
+      main: Clouds
+    wind:
+      deg: 342
+      gust: 1.89
+      speed: 1.9
+  - clouds:
+      all: 29
+    dt: 1682402400
+    dt_txt: '2023-04-25 06:00:00'
+    main:
+      feels_like: 292.18
+      grnd_level: 988
+      humidity: 45
+      pressure: 1015
+      sea_level: 1015
+      temp: 292.97
+      temp_kf: 0
+      temp_max: 292.97
+      temp_min: 292.97
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: scattered clouds
+      icon: 03d
+      id: 802
+      main: Clouds
+    wind:
+      deg: 11
+      gust: 1.53
+      speed: 1.34
+  - clouds:
+      all: 0
+    dt: 1682413200
+    dt_txt: '2023-04-25 09:00:00'
+    main:
+      feels_like: 297.45
+      grnd_level: 989
+      humidity: 31
+      pressure: 1015
+      sea_level: 1015
+      temp: 298.09
+      temp_kf: 0
+      temp_max: 298.09
+      temp_min: 298.09
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: clear sky
+      icon: 01d
+      id: 800
+      main: Clear
+    wind:
+      deg: 113
+      gust: 1.17
+      speed: 1.01
+  - clouds:
+      all: 4
+    dt: 1682424000
+    dt_txt: '2023-04-25 12:00:00'
+    main:
+      feels_like: 301.69
+      grnd_level: 987
+      humidity: 19
+      pressure: 1013
+      sea_level: 1013
+      temp: 303.56
+      temp_kf: 0
+      temp_max: 303.56
+      temp_min: 303.56
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: clear sky
+      icon: 01d
+      id: 800
+      main: Clear
+    wind:
+      deg: 196
+      gust: 6.28
+      speed: 3.35
+  - clouds:
+      all: 19
+    dt: 1682434800
+    dt_txt: '2023-04-25 15:00:00'
+    main:
+      feels_like: 302.59
+      grnd_level: 985
+      humidity: 17
+      pressure: 1011
+      sea_level: 1011
+      temp: 304.68
+      temp_kf: 0
+      temp_max: 304.68
+      temp_min: 304.68
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: few clouds
+      icon: 02d
+      id: 801
+      main: Clouds
+    wind:
+      deg: 234
+      gust: 5.96
+      speed: 5.19
+  - clouds:
+      all: 56
+    dt: 1682445600
+    dt_txt: '2023-04-25 18:00:00'
+    main:
+      feels_like: 294.87
+      grnd_level: 986
+      humidity: 38
+      pressure: 1012
+      sea_level: 1012
+      temp: 295.58
+      temp_kf: 0
+      temp_max: 295.58
+      temp_min: 295.58
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: broken clouds
+      icon: 04d
+      id: 803
+      main: Clouds
+    wind:
+      deg: 138
+      gust: 5.13
+      speed: 4.14
+  - clouds:
+      all: 100
+    dt: 1682456400
+    dt_txt: '2023-04-25 21:00:00'
+    main:
+      feels_like: 292.38
+      grnd_level: 987
+      humidity: 47
+      pressure: 1014
+      sea_level: 1014
+      temp: 293.1
+      temp_kf: 0
+      temp_max: 293.1
+      temp_min: 293.1
+    pop: 0
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: overcast clouds
+      icon: 04n
+      id: 804
+      main: Clouds
+    wind:
+      deg: 94
+      gust: 2.79
+      speed: 2.53
+  - clouds:
+      all: 66
+    dt: 1682467200
+    dt_txt: '2023-04-26 00:00:00'
+    main:
+      feels_like: 291
+      grnd_level: 987
+      humidity: 52
+      pressure: 1014
+      sea_level: 1014
+      temp: 291.73
+      temp_kf: 0
+      temp_max: 291.73
+      temp_min: 291.73
+    pop: 0
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: broken clouds
+      icon: 04n
+      id: 803
+      main: Clouds
+    wind:
+      deg: 28
+      gust: 2.12
+      speed: 2.07
+  - clouds:
+      all: 40
+    dt: 1682478000
+    dt_txt: '2023-04-26 03:00:00'
+    main:
+      feels_like: 290.15
+      grnd_level: 986
+      humidity: 52
+      pressure: 1013
+      sea_level: 1013
+      temp: 290.96
+      temp_kf: 0
+      temp_max: 290.96
+      temp_min: 290.96
+    pop: 0
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: scattered clouds
+      icon: 03n
+      id: 802
+      main: Clouds
+    wind:
+      deg: 354
+      gust: 1.34
+      speed: 1.27
+  - clouds:
+      all: 24
+    dt: 1682488800
+    dt_txt: '2023-04-26 06:00:00'
+    main:
+      feels_like: 292.74
+      grnd_level: 987
+      humidity: 43
+      pressure: 1014
+      sea_level: 1014
+      temp: 293.52
+      temp_kf: 0
+      temp_max: 293.52
+      temp_min: 293.52
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: few clouds
+      icon: 02d
+      id: 801
+      main: Clouds
+    wind:
+      deg: 331
+      gust: 1.06
+      speed: 0.94
+  - clouds:
+      all: 6
+    dt: 1682499600
+    dt_txt: '2023-04-26 09:00:00'
+    main:
+      feels_like: 299.38
+      grnd_level: 988
+      humidity: 26
+      pressure: 1015
+      sea_level: 1015
+      temp: 300.08
+      temp_kf: 0
+      temp_max: 300.08
+      temp_min: 300.08
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: clear sky
+      icon: 01d
+      id: 800
+      main: Clear
+    wind:
+      deg: 65
+      gust: 1.09
+      speed: 0.99
+  - clouds:
+      all: 4
+    dt: 1682510400
+    dt_txt: '2023-04-26 12:00:00'
+    main:
+      feels_like: 302.38
+      grnd_level: 987
+      humidity: 18
+      pressure: 1013
+      sea_level: 1013
+      temp: 304.41
+      temp_kf: 0
+      temp_max: 304.41
+      temp_min: 304.41
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: clear sky
+      icon: 01d
+      id: 800
+      main: Clear
+    wind:
+      deg: 115
+      gust: 4.88
+      speed: 2
+  - clouds:
+      all: 6
+    dt: 1682521200
+    dt_txt: '2023-04-26 15:00:00'
+    main:
+      feels_like: 302.82
+      grnd_level: 986
+      humidity: 19
+      pressure: 1012
+      sea_level: 1012
+      temp: 304.87
+      temp_kf: 0
+      temp_max: 304.87
+      temp_min: 304.87
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: clear sky
+      icon: 01d
+      id: 800
+      main: Clear
+    wind:
+      deg: 128
+      gust: 5.4
+      speed: 7.64
+  - clouds:
+      all: 11
+    dt: 1682532000
+    dt_txt: '2023-04-26 18:00:00'
+    main:
+      feels_like: 295.8
+      grnd_level: 987
+      humidity: 37
+      pressure: 1014
+      sea_level: 1014
+      temp: 296.45
+      temp_kf: 0
+      temp_max: 296.45
+      temp_min: 296.45
+    pop: 0
+    sys:
+      pod: d
+    visibility: 10000
+    weather:
+    - description: few clouds
+      icon: 02d
+      id: 801
+      main: Clouds
+    wind:
+      deg: 118
+      gust: 5.64
+      speed: 4.73
+  - clouds:
+      all: 14
+    dt: 1682542800
+    dt_txt: '2023-04-26 21:00:00'
+    main:
+      feels_like: 292.87
+      grnd_level: 990
+      humidity: 43
+      pressure: 1017
+      sea_level: 1017
+      temp: 293.64
+      temp_kf: 0
+      temp_max: 293.64
+      temp_min: 293.64
+    pop: 0
+    sys:
+      pod: n
+    visibility: 10000
+    weather:
+    - description: few clouds
+      icon: 02n
+      id: 801
+      main: Clouds
+    wind:
+      deg: 93
+      gust: 5.19
+      speed: 2.99
+  message: 0
+last-update: 21/04/2023
+location:
+  country_code: TN
+  country_name: Tunisia
+  lat: 34.4739
+  lon: 9.4613
+weather:
+  base: stations
+  clouds:
+    all: 34
+  cod: 200
+  coord:
+    lat: 34.4739
+    lon: 9.4613
+  dt: 1682111800
+  id: 2473183
+  main:
+    feels_like: 289.5
+    grnd_level: 983
+    humidity: 58
+    pressure: 1011
+    sea_level: 1011
+    temp: 290.22
+    temp_max: 290.22
+    temp_min: 290.22
+  name: As Sanad
+  sys:
+    country: TN
+    sunrise: 1682052225
+    sunset: 1682099865
+  timezone: 3600
+  visibility: 10000
+  weather:
+  - description: scattered clouds
+    icon: 03n
+    id: 802
+    main: Clouds
+  wind:
+    deg: 41
+    gust: 12.12
+    speed: 5.94

@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QWidget, QVBoxLayout, QLabel, QLayout
+from PySide6.QtWidgets import QWidget, QVBoxLayout, QLabel
 
 from datetime import datetime
 from utils import tools
@@ -16,12 +16,10 @@ class Card(QWidget):
                                 qproperty-alignment: AlignCenter;
                                 font-size: 25px;
                             }
-
                            """)
         
-        
         layout = QVBoxLayout()
-        time_lbl = QLabel(datetime.utcfromtimestamp(weather['dt']).strftime('%H:%M'))
+        time_lbl = QLabel(datetime.utcfromtimestamp(weather['dt']).strftime('%a\n%H:%M'))
         icon_lbl = QLabel()
         icon_lbl.setPixmap(tools.getIcon(weather['weather'][0]['icon']))
         icon_lbl.setScaledContents(True)

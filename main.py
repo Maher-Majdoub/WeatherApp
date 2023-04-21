@@ -1,15 +1,12 @@
-from PySide6.QtWidgets import QApplication, QLabel, QLineEdit
-from PySide6.QtGui import QPixmap, QColor
+from PySide6.QtWidgets import QApplication
 from components.mainwindow import MainWindow
-#from utils.get_weather import getWeather
-import urllib.request
-
 
 if __name__ == '__main__':
-    
     app = QApplication()
-    window = MainWindow()
-    window.show()
+    window = MainWindow(app)
+    try:
+        window.show()
+        app.exec()
+    except:
+        app.exit()
     
-    
-    app.exec()

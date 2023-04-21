@@ -1,47 +1,41 @@
-from PySide6.QtWidgets import QWidget
-from PySide6 import QtCore
+from PySide6.QtWidgets import QWidget, QLabel, QVBoxLayout, QMessageBox, QApplication
 from gui.mainwindow_ui import Ui_mainwindow
 from .card import Card
 from utils import tools
-from utils.weather import Weather
 from datetime import datetime
-import os
 
 class MainWindow(QWidget, Ui_mainwindow):
-    def __init__(self):
+    def __init__(self, app : QApplication):
+        w = tools.getWeather()
         super().__init__()
-        self.setupUi(self)
-        
-        self.gridLayout.setContentsMargins(10, 10, 10, 10)
-        self.currentShowedDay = 1
-        self.coutry_name, self.country_code, self.forecast, self.weather = tools.getWeather()
-        forecast_list = [self.forecast['list'][i] for i in range(int(self.forecast['cnt']))]
-        day1 = [forecast_list[i] for i in range(8)]
-        day2 = [forecast_list[i] for i in range(8, 16)]
-        day3 = [forecast_list[i] for i in range(16, 24)]
-        day4 = [forecast_list[i] for i in range(24, 32)]
-        day5 = [forecast_list[i] for i in range(32, 40)]
-        del(forecast_list)
-        self.days = [day1, day2, day3, day4, day5]
-        self.mainweather_icon.setPixmap(tools.getIcon('01d'))
-                
-        
-
-        self.setGlobalWeather()
-        self.previousday_lbl.mousePressEvent = self.showPreviousDay
-        self.nextday_lbl.mousePressEvent = self.showNextDay
+        if w:
+            self.setupUi(self)
+            self.gridLayout.setContentsMargins(10, 10, 10, 10)
+            self.currentShowedDay = 1
+            self.coutry_name, self.country_code, self.forecast, self.weather = w
+            forecast_list = [self.forecast['list'][i] for i in range(int(self.forecast['cnt']))]
+            day1 = [forecast_list[i] for i in range(8)]
+            day2 = [forecast_list[i] for i in range(8, 16)]
+            day3 = [forecast_list[i] for i in range(16, 24)]
+            day4 = [forecast_list[i] for i in range(24, 32)]
+            day5 = [forecast_list[i] for i in range(32, 40)]
+            del(forecast_list)
+            self.days = [day1, day2, day3, day4, day5]
+            self.setGlobalWeather()
+            self.previousday_lbl.mousePressEvent = self.showPreviousDay
+            self.nextday_lbl.mousePressEvent = self.showNextDay
+        else: 
+            QMessageBox.warning(self, 'No Internet', 'Please check the internet connection and rerun the application !')
+            raise Exception('No Internet')
 
         
 
     def setGlobalWeather(self):
-        # coutry_name, country_code, global_weather, current_weather = tools.getWeather()
-        # print(current_weather)
-        # print(global_weather)
-        weather = tools.convertWeather(self.weather)  # current_weather, current_weather['sys']['sunset'],  current_weather['sys']['sunset']
+        weather = tools.convertWeather(self.weather) 
         sunrise = datetime.utcfromtimestamp(weather.sunrise).strftime('%H:%M')
         sunset = datetime.utcfromtimestamp(weather.sunset).strftime('%H:%M')
         self.country_lbl.setText(f'{self.coutry_name},  {self.country_code}')
-        self.date_lbl.setText(tools.getCurrentDateTime())
+        self.date_lbl.setText(datetime.utcfromtimestamp(weather.dt).strftime('%A %d %B'))
         self.mainweather_icon.setPixmap(tools.getIcon(weather.icon))
         self.maintemp_lbl.setText(f'{round(weather.temp - 273.15)}°C')
         self.weatherdesc_lbl.setText(weather.description.title())
