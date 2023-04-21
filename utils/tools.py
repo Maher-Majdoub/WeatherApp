@@ -3,11 +3,9 @@ from .weather import Weather
 from datetime import datetime
 import os, requests, yaml
 
-try:
-    API_KEY = os.environ.get('openweathermap_APIKEY')
-except:
-    pass
-    #getapi key
+
+API_KEY = os.environ.get('openweathermap_APIKEY')
+
 
 def __getUserIP():
     # getting user-ip
@@ -25,7 +23,6 @@ def __getLocation():
     USER_IP = __getUserIP()
     if USER_IP : 
         try:
-            #x = 1/0
             API_KEY = os.environ.get('apiip_APIKEY')
             url = f'http://apiip.net/api/check?ip={USER_IP}&accessKey={API_KEY}'
             response = requests.get(url).json()
@@ -34,15 +31,18 @@ def __getLocation():
             return None
 
 def __getLocFromConfig():
-    file_path =  os.path.join(os.path.dirname(__file__), '..', 'config.yml')
-    with open(file_path, 'r') as f:
-        config = yaml.safe_load(f)
-        
-    loc = config['location']
-    return loc['country_name'], loc['country_code'], loc['lat'], loc['lon']
-    
+    try:
+        file_path =  os.path.join(os.path.dirname(__file__), '..', 'config.yml')
+        with open(file_path, 'r') as f:
+            config = yaml.safe_load(f)
+            
+        loc = config['location']
+        return loc['country_name'], loc['country_code'], loc['lat'], loc['lon']
+    except:
+        return None
 def __getLocManualy():
-    return None
+    # not finished
+    return 'London', 'UK', 51.507351, -0.127758
     
 def __saveConfig(location, weather, forecast):
     file_path =  os.path.join(os.path.dirname(__file__), '..', 'config.yml')
@@ -59,8 +59,6 @@ def __saveConfig(location, weather, forecast):
         'forecast' : forecast       
     }
     
-        
-    
     with open(file_path, 'w') as f:
         yaml.safe_dump(config, f)
         
@@ -71,8 +69,6 @@ def getWeatherFromConfig():
     if config['last-update'] == datetime.now().strftime('%d/%m/%Y'):  # updated today
         return config['forecast'], config['weather']
     
-        
-
 def getWeather():
     loc = __getLocation()
     if not loc:
